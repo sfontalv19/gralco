@@ -1,0 +1,563 @@
+
+
+html {
+    font-size: 90.5%;
+    box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-color: rgb(76, 133, 219);
+}
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espacio de relleno dentro del contenedor */
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+.menu {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    position: relative;
+    z-index: 1000;
+}
+
+.menu-fija {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    align-content: end ;
+    z-index: 999;
+
+   
+  }
+
+.menu li {
+    margin-right: 20px;
+    font-size: 1.5rem; /* Espacio entre los elementos de la lista */
+}
+.menu li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+.menu li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color de texto para los enlaces */
+    color: aliceblue;
+}
+
+.menu li a:hover {
+    background-color: #af814c;
+    border-radius: 4rem;
+}
+.menu-navegacion {
+    margin-right: 20px; /* Espacio entre la imagen y la lista */
+}
+
+
+/* diseño de la imagen */
+
+header {
+    background-color: black;
+    display: flex;
+    
+}
+.diseño {
+    align-items: center;
+    display: flex;
+    padding-left: auto;
+    margin: auto;
+    padding-top: 1rem;
+    
+ }
+
+ .parrafos {
+  display: flex;
+  padding: 1rem;
+  margin-right:1rem;
+  margin: .5rem;
+  font-family: 2.4px; 
+  color: white;
+  
+ }
+ .parrafo {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    padding: 0%;
+    margin-right: 2%;
+    font-size: 22px;
+
+
+}
+    h2 {
+        display: flex;
+        text-align: center;
+        padding-left: 20rem;
+        padding-right: 20rem;
+        text-decoration: underline;
+        font-size: 32px;
+        text-align: center;
+        
+    }
+.quienes-somos {
+    color: aliceblue;
+    justify-content: center;
+    font-size: 25px;
+    padding-left: 20rem;
+    padding-right: 20rem;
+
+
+
+}
+.boton-conoce {
+    
+        background-color: #4CAF50; /* Color de fondo del botón */
+        border: none;
+        color: white; /* Color del texto del botón */
+        padding: 15px 32px; /* Espaciado interno del botón */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s; /* Duración de la transición */
+        cursor: pointer;
+      }
+
+.boton-conoce:hover {
+    background-color: #0e5691; /* Nuevo color de fondo del botón al pasar el cursor */
+}
+
+
+
+
+.logo {
+    display: grid; /* Utiliza un diseño de cuadrícula */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las columnas */
+    text-align: center; /* Alinea el contenido al centro */
+    padding-left: 1.5rem;
+}
+
+.imagen-logo {
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Hace que la altura de la imagen se ajuste automáticamente */
+    margin-bottom: 10px; /* Espacio entre la imagen y el párrafo */
+}
+
+p {
+    color:white;
+    font-size: 22px;
+    padding: 1rem;
+}
+usuario-contraseña
+portalDeEmpleados
+
+h4 {
+    color: black;
+    font-size: 34px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+
+/* portal de empleados */
+
+.portalDeEmpleados {
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/*formulario */
+.usuario-contraseña {
+    /* Tus estilos para el formulario aquí */
+    width: 300px;
+    margin: 0 auto;
+    padding: 23px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para los elementos del formulario */
+.usuario-contraseña input[type="text"],
+.usuario-contraseña input[type="password"],
+.usuario-contraseña input[type="submit"] {
+    /* Tus estilos para los campos de texto y el botón de enviar aquí */
+    display: block;
+    width: 80%;
+    margin-bottom: 8px;
+    padding: 10px;
+    border: .5px solid #ccc;
+    border-radius: 3px;
+}
+
+.inicio {
+    color: beige;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    border: 4rem;
+    
+
+}
+
+/* acta */
+
+
+.logo-azul {
+    height: 1%;
+    width: 25rem ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 50px;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    text-decoration: none;
+}
+
+.mensaje-acta {
+    display: block; /* Asegura que el label sea de tipo bloque */
+    margin-bottom: 10px; /* Espacio entre el label y el textarea */
+    font-size: 24px;
+    text-align: center;
+}
+#acta {
+    width: 99%; /* Ancho del textarea al 100% del contenedor */
+    height: 400px; /* Altura del textarea (ajustable según tu preferencia) */
+    margin: auto;
+    padding-left: .2rem;
+    padding-right: .1rem;
+}
+
+.boton-enviar {
+color: black;
+font-size: 22px;
+margin: 1rem;
+align-items: center;
+}
+
+.lineaDeNegocios {
+    text-decoration: none;
+}
+
+
+/*  CONOCE MAS */
+
+.contenedor {
+    color: #2c57cc;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.parrafo-mision {
+    color: rgb(17, 17, 17);
+    padding-left: 0;
+    margin: 2rem;
+    text-align: center;
+}
+
+.titulo-conoce {
+    text-align: center;
+}
+
+.fondo {
+    background-color: aliceblue;
+}
+
+li {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    color: gray;
+    text-align: center;
+    font-size: 22px;
+    
+}
+
+h3 {
+    text-decoration: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.contactos {
+    display: flex;
+  }
+  
+  .columna-izquierda, .columna-central, .columna-derecha {
+    flex: 1;
+  }
+  
+  .columna-izquierda {
+    padding-right: 20px; /* Añade espacio a la derecha */
+  }
+  
+  .columna-central {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  .columna-derecha {
+    padding-left: 20px; /* Añade espacio a la izquierda */
+    
+  }
+
+  .ubicacion {
+    display: flex; /* Establece un diseño de tipo fila */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.logo-ubicacion,
+.telefono {
+    width: 40px; /* Ajusta el tamaño según tu preferencia */
+    height: auto; /* Esto mantiene la proporción del icono */
+    margin-right: 10px; /* Agrega un espacio entre el icono y el párrafo */
+    margin: 2rem;
+}
+
+textarea {
+    width: 390px; /* Ancho de 300 píxeles */
+    height: 150px; /* Alto de 150 píxeles */
+    border-radius: 10px;
+}
+
+
+input {
+    border-radius: 1rem;
+    margin: 2rem;
+   
+}
+
+.inicio {
+    color: black;
+}
+
+/* div de logos */
+.clientes {
+    display: block;
+    text-align: center;
+    padding-bottom: 2rem;
+    text-decoration: none;
+    font-size: 3.8rem;
+    
+}
+.patrocinadores {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Para que las imágenes se ajusten mejor en el contenedor */
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 100%; /* Ajuste de ancho para que ocupe todo el contenedor */
+    margin-left: 2px;
+}
+
+.patrocinadores img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 5px; /* Espacio entre imágenes */
+    transition: transform 0.5s ease;   
+
+}
+.patrocinadores img:hover {
+    transform: scale(1.5);
+    cursor: crosshair;
+}
+
+/* contactos antes del floter */
+
+.contactos {
+    padding-top: 10rem;
+    display: flex;   
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: none;
+   
+}
+
+
+.column {
+    /* tamano de la imagen */
+    width: 20%; /* Cambia este valor según tu preferencia */
+    height: 10%;
+   padding: 1rem;
+    text-align: center;
+}
+
+.imagen-contacto {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin-bottom: 2rem;
+    font-size: .5rem;
+    color: black;
+    margin: 1rem;
+}
+.texto-parrafo{
+    font-size: 2rem;
+}
+
+.contactanos {
+    font-size: 1.5rem;
+}
+
+.column1 {
+    padding-left: 1rem;
+}
+
+.logo-redes {
+   display: flex;
+   justify-content: center;
+   
+}
+
+.enlaces a {
+    display: flex;
+    flex-direction: row;
+     margin-bottom: 10px; /* Espacio entre enlaces */
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    color: #000; /* Color del texto del enlace */
+    
+}
+
+.enlaces a:hover {
+    cursor:pointer;
+    color:white; /* Color del texto al pasar el cursor */
+}
+
+
+.boton-infinito{
+    background-color: #000;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.boton-infinito::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        red,blue,deeppink,blue,red,blue,deeppink,blue
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+footer.final {
+    background-color: #333;
+    padding: .3rem;    
+    margin-top: 1rem;
+
+    
+}
+
+footer.final p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.fondo-login {
+    background-color: black;
+}
+
+.boton-sugerencia {
+    display: block;
+    text-align: center;
+    color: #ccc;
+    font-size: 2rem;
+}
+
+
+
+/* to do */
+
+.toDoh1 {
+    text-align: center;
+}
+
+
+.todoclass
+{
+    text-align: center;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    margin: 20px, 0;
+    background-image: url(/imagenes/atun-van-camps-aceite-vegetal-160-g-3.webp) ;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-position: center; /* Centra la imagen en el fondo */
+ 
+   
+}
+
+li {
+    margin: 10px  0;
+
+}
+
+ul{
+    list-style-type: none;
+    color: white;
+}
+
+
+.task{
+    color: black;
+    font-size: 2rem;
+}
